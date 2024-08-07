@@ -1,0 +1,223 @@
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font */
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+}
+
+/* Container to center content and provide padding */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #0033cc; /* Dark blue header */
+    color: #ffff00; /* Yellow text color */
+    padding: 20px 0; /* Space around header content */
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space between logo and title */
+}
+
+header h1 {
+    margin-bottom: 10px; /* Space below the title */
+    font-size: 2.5em; /* Larger font size for header */
+    font-family: 'Roboto Slab', serif; /* Fancy font for header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #ffff00; /* Yellow links */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: center; /* Center align text in main content */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #0033cc; /* Dark blue for headings */
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif; /* Fancy font for headings */
+}
+
+main h3 {
+    color: #0033cc; /* Dark blue for subheadings */
+    margin-bottom: 15px;
+    font-family: 'Roboto Slab', serif; /* Fancy font for subheadings */
+}
+
+main p {
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improve readability */
+    font-family: 'Roboto', sans-serif; /* Regular font for paragraphs */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between cells */
+    margin: 20px auto; /* Center the table and add space around */
+}
+
+table th, table td {
+    border: 1px solid #cccccc; /* Light grey border */
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0033cc; /* Dark blue background for headers */
+    color: #ffff00; /* Yellow text color */
+    font-family: 'Roboto Slab', serif; /* Fancy font for headers */
+}
+
+table td {
+    background-color: #f9f9f9; /* Light grey background for table cells */
+}
+
+table ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+table ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Footer styling */
+footer {
+    background-color: #0033cc; /* Dark blue footer */
+    color: #ffff00; /* Yellow text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between cells */
+    margin: 20px auto; /* Center the table and add space around */
+}
+
+table th, table td {
+    border: 1px solid #cccccc; /* Light grey border */
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0033cc; /* Dark blue background for headers */
+    color: #ffff00; /* Yellow text color */
+    font-family: 'Roboto Slab', serif; /* Fancy font for headers */
+}
+
+table td {
+    background-color: #f9f9f9; /* Light grey background for table cells */
+}
+
+table ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+table ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between images */
+    justify-content: center; /* Center images horizontally */
+}
+
+.gallery img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+/* Fullscreen modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border: 2px solid #fff; /* White border around image */
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
